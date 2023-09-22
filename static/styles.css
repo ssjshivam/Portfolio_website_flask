@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@400;700&display=swap');
+
 body {
   overflow-x: hidden; /* Hide horizontal scrollbar */
   font-family: Arial, sans-serif;
@@ -8,8 +10,6 @@ body {
 }
 
 /* NAVIGATION BAR */
-
-/* Wrap the navbar in a container */
 /* Basic styling for the navbar container */
 .navbar-container {
   position: fixed;
@@ -17,7 +17,7 @@ body {
   left: 0;
   width: 10vw;
   height: 100vh;
-  background-color: transparent; /* Change this to your preferred background color */
+  background-color: transparent;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,49 +27,58 @@ body {
 
 /* Styling for each navbar item */
 .nav-item {
-  display: flex;
+  display:flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 80%;
-  height: 20vh; /* Adjust the height as needed */
-  cursor: pointer;
-  transition: background-color 0.2s;
+  width: 80%; /* This is width of navbar */
+  height: 15vh; /* Adjust the height as needed */
+  cursor:pointer;
+  transition: background-color 0.5s;
   border-radius: 20px; /* Add rounded corners to the navbar items */
   overflow: hidden; /* Ensure the rounded corners are applied */
+  margin: 5px;
+}
+
+/* To Size & Color the icons */
+.nav-item i{
+  color: #FC7F61;
+  font-size: 35px;
 }
 
 /* Styling for the item's text */
 .nav-text {
   display: none;
-  margin-left: 10px;
-  color: white; /* Text color */
+  color:antiquewhite; /* Text color */
+  margin-top: 5px;
+  font-family: 'Raleway', sans-serif, bold;
 }
 
 /* Hover effect for navbar items */
 .nav-item:hover {
-  background-color: #555; /* Change this to your preferred hover color */
+  background-color: #FC7F61; /* Change this to your preferred hover color */
 }
 
 /* Show the text when hovering over the item */
 .nav-item:hover .nav-text {
-  display:none;
+  display:inline;
 }
 
-/* Styles for mobile mode ------------------------------------*/
+.nav-item:hover i{
+  color:#481C5C; /* Change this to your preferred hover color of the icon */
+}
 
 /* END NAV */
 
 #bg-container {
-  /* background: url(/static/assets/Homepage_BG.png) center center / cover no-repeat; */
+  background: url(/static/assets/Homepage_BG.png) center center / cover no-repeat;
   position: relative;
   min-height: 100vh;
   background-position: center center;
   background-repeat: no-repeat;
 }
 
-
-/* METHOD 1 */
-
+/* The topmost container */
 .top-container{
   width:100vw;
   height: 100vh;
@@ -77,7 +86,7 @@ body {
   left: 25vw;
 
 }
-
+/* It is for the heading */
 .hi{
   top: 30vh;
   position: absolute;
@@ -87,6 +96,7 @@ body {
   color: antiquewhite;
 } 
 
+/* Sub heading */
 .i_am {
   position: absolute;
   top: 55vh;

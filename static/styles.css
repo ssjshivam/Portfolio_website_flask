@@ -1,0 +1,97 @@
+body {
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  background-color: #797676;
+}
+
+/* NAVIGATION BAR */
+
+/* Wrap the navbar in a container */
+/* Basic styling for the navbar container */
+.navbar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 10vw;
+  height: 100vh;
+  background-color: transparent; /* Change this to your preferred background color */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* To evenly space the items */
+  z-index: 1000;
+}
+
+/* Styling for each navbar item */
+.nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 20vh; /* Adjust the height as needed */
+  cursor: pointer;
+  transition: background-color 0.2s;
+  border-radius: 20px; /* Add rounded corners to the navbar items */
+  overflow: hidden; /* Ensure the rounded corners are applied */
+}
+
+/* Styling for the item's text */
+.nav-text {
+  display: none;
+  margin-left: 10px;
+  color: white; /* Text color */
+}
+
+/* Hover effect for navbar items */
+.nav-item:hover {
+  background-color: #555; /* Change this to your preferred hover color */
+}
+
+/* Show the text when hovering over the item */
+.nav-item:hover .nav-text {
+  display:none;
+}
+
+/* Styles for mobile mode ------------------------------------*/
+
+/* END NAV */
+
+#bg-container {
+  /* background: url(/static/assets/Homepage_BG.png) center center / cover no-repeat; */
+  position: relative;
+  min-height: 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+
+/* METHOD 1 */
+
+.top-container{
+  width:100vw;
+  height: 100vh;
+  position: relative;
+  left: 25vw;
+
+}
+
+.hi{
+  top: 30vh;
+  position: absolute;
+  margin: auto;
+  font-size: clamp(40px, 7vw, 100px);;
+  font-family: 'Oleo Script', cursive;
+  color: antiquewhite;
+} 
+
+.i_am {
+  position: absolute;
+  top: 55vh;
+  margin: auto;
+  font-size: clamp(35px, 4vw, 100px);;
+  font-family: 'Oleo Script', cursive;
+  color: antiquewhite;
+}

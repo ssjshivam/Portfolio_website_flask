@@ -1,11 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@400;700&display=swap');
 
+
 body {
   overflow-x: hidden; /* Hide horizontal scrollbar */
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color:#481C5C;
+}
+
+.home-p {
+  position: absolute;
+  top: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* NAVIGATION BAR */
@@ -22,6 +32,8 @@ body {
   align-items: center;
   justify-content: center; /* To evenly space the items */
   z-index: 1000;
+  transition: margin-left 0.5s;
+  margin-left: -200px; /* Start off the screen */
 }
 
 /* Styling for each navbar item */
@@ -68,6 +80,65 @@ body {
 }
 
 /* END NAV */
+
+/* LINKS NAV*/
+.links-navbar-container {
+  position:absolute;
+  top: 0;
+  right:0;
+  width: 10vw;
+  height: 100vh;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* To evenly space the items */
+  z-index: 999;
+}
+
+/* Styling for each navbar item */
+.links-nav-item {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%; /* This is width of navbar */
+  height: 15vh; /* Adjust the height as needed */
+  cursor:pointer;
+  transition: background-color 0.5s;
+  border-radius: 20px; /* Add rounded corners to the navbar items */
+  overflow: hidden; /* Ensure the rounded corners are applied */
+  margin: 5px;
+}
+
+/* To Size & Color the icons */
+.links-nav-item i{
+  color: #481C5C;
+  font-size: 35px;
+}
+
+/* Styling for the item's text */
+.links-nav-text {
+  display: none;
+  color:antiquewhite; /* Text color */
+  margin-top: 5px;
+  font-family: 'Raleway', sans-serif, bold;
+}
+
+/* Hover effect for navbar items */
+.links-nav-item:hover {
+  background-color:#481C5C; /* Change this to your preferred hover color */
+}
+
+/* Show the text when hovering over the item */
+.links-nav-item:hover .nav-text {
+  display:inline;
+}
+
+.links-nav-item:hover i{
+  color:#FC7F61; /* Change this to your preferred hover color of the icon */
+}
+/* END LINKS NAV */
 
 #bg-container {
   background: url(/static/assets/Homepage_BG.png) center center / cover no-repeat;
@@ -123,8 +194,7 @@ body {
 }
 
 .about-heading-text {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
-  ;
+  font-family: 'Oleo Script', cursive;
   font-size: 3vw;
   color: antiquewhite;
   background-color:#FC7F61;
@@ -194,8 +264,7 @@ body {
 }
 
 .projects-heading-text {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
-  ;
+  font-family: 'Oleo Script', cursive;
   font-size: 3vw;
   color: antiquewhite;
   background-color:#FC7F61;
@@ -291,8 +360,7 @@ body {
 }
 
 .contact-heading-text {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
-  ;
+  font-family: 'Oleo Script', cursive;
   font-size: 3vw;
   color: antiquewhite;
   background-color:#FC7F61;
@@ -330,9 +398,64 @@ body {
   padding: 50px;
 }
 
-/* Footer
+.the-button {
+  background-color:#481C5C;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: #00db80;
+  border-color: #0899b3; /*set the color you want here*/
+}
+
+/* Footer */
 footer {
-  background-color: yellowgreen;
+  height: 60vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  font-family: 'Raleway', sans-serif;
+  font-size:1.1rem;
+  color: antiquewhite;
+}
+
+.footer-content {
   width: 100vw;
   height: 40vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.footer-divider{
+  background-color: #73fc61;
+  margin: 15vw;
+  border-radius: 25px;
+}
+
+.footer-links {
+  width: 100vw;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .footer-sns-links {
+  font-size: 2rem;
+  color: #FC7F61;
 } */
+
+.footer-sns-links i{
+  color: #FC7F61;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+.footer-sns-links :hover i{
+  color:antiquewhite ;
+}

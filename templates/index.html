@@ -1,42 +1,95 @@
 {% include 'header.html' %}
 <!--Navbar-->
-<div class="navbar-container">
+<div class="navbar-container" id="element">
     <div class="nav-item">
-        <a href="#section1">
+        <a href="#home">
             <i class="fa-solid fa-house"></i>
         </a>
-        <a href="#section1">
+        <a href="#home">
             <span class="nav-text">Home</span>
         </a>
 
     </div>
     <div class="nav-item">
-        <i class="fa-solid fa-user-tie"></i>
-        </i>
-        <span class="nav-text">About</span>
+        <a href="#about">
+            <i class="fa-solid fa-user-tie"></i>
+        </a>
+        <a href="#about">
+            <span class="nav-text">About</span>
+        </a>
     </div>
     <div class="nav-item">
-        <i class="fa-solid fa-bars-progress"></i>
-        </i>
-        <span class="nav-text">Projects</span>
+        <a href="#projects">
+            <i class="fa-solid fa-bars-progress"></i>
+        </a>
+        <a href="#projects">
+            <span class="nav-text">Projects</span>
+        </a>
     </div>
     <div class="nav-item">
-        <i class="fa-solid fa-message"></i></i><span class="nav-text">Contact</span>
+        <a href="#contact">
+            <i class="fa-solid fa-message"></i>
+        </a>
+        <a href="#contact">
+            <span class="nav-text">Contact</span>
+        </a>
     </div><!-- Add more navbar items as needed -->
-</div><!--Content-->
+
+</div>
+
+<!-- Links Navbar -->
+<div class="links-navbar-container" id="fadeInLinks" style="opacity: 0;">
+    <div class="links-nav-item">
+        <a href="https://www.facebook.com/Ssjshivam/" target="_blank">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://www.facebook.com/Ssjshivam/" target="_blank">
+            <span class="nav-text">Facebook</span>
+        </a>
+
+    </div>
+    <div class="links-nav-item">
+        <a href="https://www.youtube.com/vamzanimations" target="_blank">
+            <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href="https://www.youtube.com/vamzanimations" target="_blank">
+            <span class="nav-text">YouTube</span>
+        </a>
+    </div>
+    <div class="links-nav-item">
+        <a href="https://www.linkedin.com/in/surya-pratap-singh-3b477b242/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/surya-pratap-singh-3b477b242/" target="_blank">
+            <span class="nav-text">Linkedin</span>
+        </a>
+    </div>
+    <div class="links-nav-item">
+        <a href="https://github.com/ssjshivam" target="_blank">
+            <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://github.com/ssjshivam" target="_blank">
+            <span class="nav-text">GitHub</span>
+        </a>
+    </div><!-- Add more navbar items as needed -->
+
+</div>
+
+<!--Content-->
+<p class="home-p" id="home"></p>
 <section id="bg-container">
     <div class="top-container">
-        <div class="hi box text">Hi There! I'm Surya</div>
-        <div class="i_am">I am a developer</div>
+        <div class="hi box text" id="fadeInHeading" style="opacity: 0;">Hi There! I'm Surya</div>
+        <p class="i_am" id="fadeInText" style="opacity: 0;">I am a software developer</p>
     </div>
 </section><!-- About Me -->
-<section class="about" id="section1">
+<section class="about" id="about">
     <div class="about-heading">
         <div class="about-heading-text">About</div>
     </div>
     <div class="about-content">
         <div class="about-img">
-            <img src="static/assets/Vamz Waving.png" alt="">
+            <img src="static/assets/profile-pic.jpg" alt="">
         </div>
         <div class="about-text">
             <div class="about-text-text">Welcome to my website! I'm Surya Pratap Singh, a passionate programming student
@@ -47,8 +100,12 @@
                 in HTML, CSS, and JavaScript. I'm a dedicated lifelong learner, always eager to explore new horizons.
                 Thanks for stopping by and have a nice day!</span></div>
         </div>
-</section><!-- Resume --><!-- Projects -->
-<section class="projects">
+
+</section>
+<!-- Resume -->
+
+<!-- Projects -->
+<section class="projects" id="projects">
     <div class="projects-heading">
         <div class="projects-heading-text">Projects</div>
     </div>
@@ -61,14 +118,15 @@
         </a><a type="button" data-bs-toggle="modal" data-bs-target="#Modal2">
             <div class="projects-app">
                 <img src="static/assets/projects/2.png" alt="">
-                <p>Vamz Password manager</p>
+                <p>Vamz Password Manager</p>
             </div>
         </a><a type="button" data-bs-toggle="modal" data-bs-target="#Modal3">
             <div class="projects-app">
                 <img src="static/assets/projects/3.png" alt="">
-                <p>Space Invaders Tkinter Game</p>
+                <p>Space Invaders Game</p>
             </div>
-        </a></div>
+        </a>
+    </div>
     <div class="projects-br"></div>
     <div class="projects-row-2"><a type="button" data-bs-toggle="modal" data-bs-target="#Modal4">
             <div class="projects-app">
@@ -83,20 +141,25 @@
         </a><a type="button" data-bs-toggle="modal" data-bs-target="#Modal6">
             <div class="projects-app">
                 <img src="static/assets/projects/6.png" alt="">
-                <p>Vonnie's arrival Website</p>
+                <p>Vonnie's Arrival Website</p>
             </div>
         </a></div>
-</section><!-- Modal -->
+</section>
+<!-- Modals -->
 <div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Japanese Project</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Japanese Flash Cards App</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <div class="project-modal-images">
                     <img src="static/assets/projects/1.png" alt="">
+                    <p>This is a Japanese flash card app built using Tkinter GUI library in python, the user will guess
+                        the meaning of the work in japanese and if he knows the meaning he can top correct button or if
+                        not he can tap no button, If the user doesn't do anything for 5 seconds the meaning of teh word
+                        will be revealed.</p>
                 </div>
             </div>
             <div class="modal-footer">
@@ -115,6 +178,11 @@
             <div class="modal-body">
                 <div class="project-modal-images">
                     <img src="static/assets/projects/2.png" alt="">
+                    <p>This is a simple password manager built using Tkinter GUI library along with other libraries such
+                        as
+                        random, Pillow, etc. The user can generate a secure random password for a website and also store
+                        it
+                        inside the password manager, he can also search for the password using the search button.</p>
                 </div>
             </div>
             <div class="modal-footer">
@@ -127,12 +195,16 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Vamz Password Manager</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Space Invaders tkinter game</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <div class="project-modal-images">
                     <img src="static/assets/projects/3.png" alt="">
+                    <p>This is a remake of the old classic retro game - Space Invaders, thee user will have to defend &
+                        destroy the invader's fleet. The game is built using the Turtle libray in python and also have
+                        sound
+                        effects in the game.</p>
                 </div>
             </div>
             <div class="modal-footer">
@@ -145,12 +217,15 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Vamz Password Manager</h5>
+                <h5 class="modal-title" id="exampleModalLabel">PDF to text or Mp3 app</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <div class="project-modal-images">
                     <img src="static/assets/projects/4.png" alt="">
+                    <p>This is app which can extract the text of the pdf and additionally it can also generate the
+                        audiobook of the pdf, its interface has been built using tkinter library, and for its
+                        functionality I have used modules such as PYPDF2 and google speech api., </p>
                 </div>
             </div>
             <div class="modal-footer">
@@ -163,12 +238,16 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Vamz Password Manager</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Image Watermarking App</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <div class="project-modal-images">
                     <img src="static/assets/projects/5.png" alt="">
+                    <p>This is an simple Watermarking app which is built only using tkinter and pillow module, user can
+                        load an image into the program and then input the text they desire, then the output image will
+                        be extracted with watermark.
+                    </p>
                 </div>
             </div>
             <div class="modal-footer">
@@ -181,12 +260,16 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Vamz Password Manager</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Vonnie's Arrival Website</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <div class="project-modal-images">
                     <img src="static/assets/projects/6.png" alt="">
+                    <p>This is an dummy online shopping website I have built for my GF,I have used using flask framework
+                        and Bootstrap with Jinja templating, it displays sections
+                        of the fashion items on the shop and user can check the item and proceed to buy them.</p>
+                    <a href="https://vonnies-arrival.onrender.com/" target="_blank">Link</a>
                 </div>
             </div>
             <div class="modal-footer">
@@ -195,8 +278,9 @@
         </div>
     </div>
 </div>
-<section class="project-contact-br"></section><!-- Contact me -->
-<section class="contact">
+<section class="project-contact-br"></section>
+<!-- Contact me -->
+<section class="contact" id="contact">
     <div class="contact-heading">
         <div class="contact-heading-text">Contact me</div>
     </div>
@@ -238,7 +322,7 @@
                         <textarea class="form-control" id="message" rows="3"></textarea>
                     </div>
                     <div class="col py-3">
-                        <input class="btn btn-primary btn-lg" value="Send Message!" type="submit">
+                        <input class="btn btn-primary btn-lg the-button" value="Send Message!" type="submit">
                     </div>
                 </div>
             </form>

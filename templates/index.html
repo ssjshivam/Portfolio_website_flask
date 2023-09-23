@@ -2,44 +2,247 @@
 <!--Navbar-->
 <div class="navbar-container">
     <div class="nav-item">
-        <i class="fa-solid fa-house"></i></i>
-        <span class="nav-text">Home</span>
+        <a href="#section1">
+            <i class="fa-solid fa-house"></i>
+        </a>
+        <a href="#section1">
+            <span class="nav-text">Home</span>
+        </a>
+
     </div>
     <div class="nav-item">
-        <i class="fa-solid fa-user-tie"></i></i>
+        <i class="fa-solid fa-user-tie"></i>
+        </i>
         <span class="nav-text">About</span>
     </div>
     <div class="nav-item">
-        <i class="fa-solid fa-bars-progress"></i></i>
+        <i class="fa-solid fa-bars-progress"></i>
+        </i>
         <span class="nav-text">Projects</span>
     </div>
     <div class="nav-item">
-        <i class="fa-solid fa-message"></i></i>
-        <span class="nav-text">Contact</span>
-    </div>
-    <!-- Add more navbar items as needed -->
-</div>
-
-<!--Content-->
+        <i class="fa-solid fa-message"></i></i><span class="nav-text">Contact</span>
+    </div><!-- Add more navbar items as needed -->
+</div><!--Content-->
 <section id="bg-container">
     <div class="top-container">
         <div class="hi box text">Hi There! I'm Surya</div>
         <div class="i_am">I am a developer</div>
     </div>
-</section>
-
-<section class="about">
+</section><!-- About Me -->
+<section class="about" id="section1">
     <div class="about-heading">
-        <div class="about-heading-text">About
-        </div>
+        <div class="about-heading-text">About</div>
     </div>
     <div class="about-content">
         <div class="about-img">
             <img src="static/assets/Vamz Waving.png" alt="">
         </div>
         <div class="about-text">
-            <div class="about-text-text">Welcome to my website! I'm Surya Pratap Singh, a passionate programming student and a creative content creator on YouTube. I embarked on my educational journey by earning a bachelor's degree in Commerce in 2021, and since then, I've been on an exciting adventure. In 2022, I dove into the world of programming, learning Python as my first programming language and exploring frameworks like Flask and Bootstrap. While my primary focus is backend development, I'm also honing my frontend skills in HTML, CSS, and JavaScript. I'm a dedicated lifelong learner, always eager to explore new horizons. Thanks for stopping by and joining me on this exciting journey!</span>
+            <div class="about-text-text">Welcome to my website! I'm Surya Pratap Singh, a passionate programming student
+                and a creative content creator on YouTube. I embarked on my educational journey by earning a bachelor's
+                degree in Commerce in 2021, and since then, I've been on an exciting adventure. In 2022, I dove into the
+                world of programming, learning Python as my first programming language and exploring frameworks like
+                Flask and Bootstrap. While my primary focus is backend development, I'm also honing my frontend skills
+                in HTML, CSS, and JavaScript. I'm a dedicated lifelong learner, always eager to explore new horizons.
+                Thanks for stopping by and have a nice day!</span></div>
+        </div>
+</section><!-- Resume --><!-- Projects -->
+<section class="projects">
+    <div class="projects-heading">
+        <div class="projects-heading-text">Projects</div>
+    </div>
+    <div class="projects-heading-desc">Here are some of the projects that's I've made</div>
+    <div class="projects-row-1"><a type="button" data-bs-toggle="modal" data-bs-target="#Modal1">
+            <div class="projects-app">
+                <img src="static/assets/projects/1.png" alt="">
+                <p>Japanese Flash Cards App</p>
+            </div>
+        </a><a type="button" data-bs-toggle="modal" data-bs-target="#Modal2">
+            <div class="projects-app">
+                <img src="static/assets/projects/2.png" alt="">
+                <p>Vamz Password manager</p>
+            </div>
+        </a><a type="button" data-bs-toggle="modal" data-bs-target="#Modal3">
+            <div class="projects-app">
+                <img src="static/assets/projects/3.png" alt="">
+                <p>Space Invaders Tkinter Game</p>
+            </div>
+        </a></div>
+    <div class="projects-br"></div>
+    <div class="projects-row-2"><a type="button" data-bs-toggle="modal" data-bs-target="#Modal4">
+            <div class="projects-app">
+                <img src="static/assets/projects/4.png" alt="">
+                <p>Pdf to Text/Mp3 App</p>
+            </div>
+        </a><a type="button" data-bs-toggle="modal" data-bs-target="#Modal5">
+            <div class="projects-app">
+                <img src="static/assets/projects/5.png" alt="">
+                <p>Image Watermarking App</p>
+            </div>
+        </a><a type="button" data-bs-toggle="modal" data-bs-target="#Modal6">
+            <div class="projects-app">
+                <img src="static/assets/projects/6.png" alt="">
+                <p>Vonnie's arrival Website</p>
+            </div>
+        </a></div>
+</section><!-- Modal -->
+<div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Japanese Project</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="project-modal-images">
+                    <img src="static/assets/projects/1.png" alt="">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
         </div>
     </div>
-</section>
-{% include 'footer.html' %}
+</div>
+<div class="modal fade" id="Modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Vamz Password Manager</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="project-modal-images">
+                    <img src="static/assets/projects/2.png" alt="">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="Modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Vamz Password Manager</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="project-modal-images">
+                    <img src="static/assets/projects/3.png" alt="">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="Modal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Vamz Password Manager</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="project-modal-images">
+                    <img src="static/assets/projects/4.png" alt="">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="Modal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Vamz Password Manager</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="project-modal-images">
+                    <img src="static/assets/projects/5.png" alt="">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="Modal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Vamz Password Manager</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="project-modal-images">
+                    <img src="static/assets/projects/6.png" alt="">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="project-contact-br"></section><!-- Contact me -->
+<section class="contact">
+    <div class="contact-heading">
+        <div class="contact-heading-text">Contact me</div>
+    </div>
+    <div class="contact-heading-desc">If you're interested about my works, you can always reach me out with the details
+        below
+    </div>
+    <div class="contact-card">
+        <div class="contact-form">
+
+            <form class="form" action="mailto:recipient@example.com" method="post" enctype="text/plain">
+                <div class="row g-3">
+                    <div class="col-4">
+                        <label for="text">Name</label>
+                    </div>
+                    <div class="col-8">
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                            placeholder="Your Name">
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="row">
+                    <div class="col-4">
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="col-8">
+                        <input type="text" class="form-control" id="subject" placeholder="Subject">
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="row">
+                    <div class="col-4">
+                        <label for="message">Message</label>
+                    </div>
+                    <div class="col-8">
+                        <textarea class="form-control" id="message" rows="3"></textarea>
+                    </div>
+                    <div class="col py-3">
+                        <input class="btn btn-primary btn-lg" value="Send Message!" type="submit">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</section>{% include 'footer.html' %}

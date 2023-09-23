@@ -163,7 +163,7 @@ body {
 
 .about-text-text {
   background-color: #FC7F61;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Raleway', sans-serif;
   color:antiquewhite;
   font-size:1.35rem;
   margin-right: 5vw;
@@ -171,3 +171,168 @@ body {
   padding: 45px;
 
 }
+
+
+/* Projects */
+.projects {
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size:1.2rem;
+  color: antiquewhite;
+}
+
+.projects-heading {
+  display: flex;
+  height: 25vh;
+  width: 100vw;
+  align-items:center;
+  justify-content: center;
+}
+
+.projects-heading-text {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+  ;
+  font-size: 3vw;
+  color: antiquewhite;
+  background-color:#FC7F61;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  border-radius: 80px;
+}
+
+.projects-heading-desc {
+  width: 100vw;
+  color: antiquewhite;
+  padding-bottom: 50px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2vw;
+}
+
+.projects-row-1 {
+  width: 100vw;
+  height: 30vh;
+  margin-left: 4vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects-row-1 p{
+  padding: 10px;
+}
+
+.projects-row-2 p{
+  padding: 10px;
+}
+
+.projects-br {
+  height: 10vh;
+}
+
+.projects-row-2 {
+  width: 100vw;
+  height: 30vh;
+  margin-left: 4vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects img {
+  width: 20vw;
+  border-radius: 25px;
+  
+}
+
+.projects-app {
+  background-color: #FC7F61;
+  margin: 4vw;
+  
+  border-radius: 25px;
+}
+
+.modal-body img{
+  width: 465px;
+}
+
+.project-contact-br{
+  height: 10vh;
+  margin-bottom: 15vh;
+}
+
+/* Contact me section */
+
+.contact {
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size:1.2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-heading {
+  display: flex;
+  height: 25vh;
+  width: 100vw;
+  align-items:center;
+  justify-content: center;
+}
+
+.contact-heading-text {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+  ;
+  font-size: 3vw;
+  color: antiquewhite;
+  background-color:#FC7F61;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  border-radius: 80px;
+}
+
+.contact-heading-desc {
+  width: 90vw;
+  color: antiquewhite;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2vw;
+  margin-top: 5vh;
+  margin-left: 2vw;
+}
+
+.contact-card {
+  width: 100vw;
+  height: 75vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-form {
+  background-color: #FC7F61;
+  margin: 4vw;
+  border-radius: 25px;
+  height: 60vh;
+  width: 60vw;
+  padding: 50px;
+}
+
+/* Footer
+footer {
+  background-color: yellowgreen;
+  width: 100vw;
+  height: 40vh;
+} */
